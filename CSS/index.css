@@ -1,0 +1,76 @@
+@import "compass/css3";    /*Import sass*/
+
+#circles{opacity: 0.2;}
+
+.circleList img{
+	
+	width: 150px;  /*Defauly height*/
+	height: 150px;
+	
+	 -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 1s, height 1s;
+	
+}
+
+.circleList img:hover{
+	
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+	
+}
+
+.circleList li {  /*Center the images for acc positioning*/
+  
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3em;
+  
+}
+
+/*Rotate position of image into degrees for every image instance*/
+.circleList > *:nth-of-type(1) {
+  -webkit-transform: rotate(0deg) translate(10em) rotate(0deg);
+          transform: rotate(0deg) translate(10em) rotate(0deg);
+		  
+		  }
+	
+.circleList > *:nth-of-type(2) {
+  -webkit-transform: rotate(45deg) translate(10em) rotate(-45deg);
+          transform: rotate(45deg) translate(10em) rotate(-45deg);
+}   
+
+.circleList > *:nth-of-type(3) {
+  -webkit-transform: rotate(90deg) translate(10em) rotate(-90deg);
+          transform: rotate(90deg) translate(10em) rotate(-90deg);
+}
+
+.circleList  > *:nth-of-type(4) {
+  -webkit-transform: rotate(135deg) translate(10em) rotate(-135deg);
+          transform: rotate(135deg) translate(10em) rotate(-135deg);
+}
+
+.circleList > *:nth-of-type(5) {
+  -webkit-transform: rotate(180deg) translate(10em) rotate(-180deg);
+          transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+
+.circleList > *:nth-of-type(6) {
+  -webkit-transform: rotate(225deg) translate(10em) rotate(-225deg);
+          transform: rotate(225deg) translate(10em) rotate(-225deg);
+}
+
+.circleList > *:nth-of-type(7) {
+  -webkit-transform: rotate(270deg) translate(10em) rotate(-270deg);
+          transform: rotate(270deg) translate(10em) rotate(-270deg);
+}
+
+.circleList > *:nth-of-type(8) {
+  -webkit-transform: rotate(315deg) translate(10em) rotate(-315deg);
+          transform: rotate(315deg) translate(10em) rotate(-315deg);
+}
+
+
+	
