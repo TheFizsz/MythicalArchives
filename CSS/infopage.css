@@ -1,0 +1,56 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col,
+.flex-row {
+    margin: 5px;
+}
+
+.flex-col *{
+    margin: 5px 0;
+}
+
+.flex-col {
+    width: 50%;
+}
+
+#god-animation {
+    /* width: 450px; */
+    height: 400px;
+    background-color: #C4C4C4;
+}
+
+#god-description {
+    /* width: 450px; */
+    min-height: 200px;
+    background-color: #C4C4C4;
+}
+
+#relevant-locations {
+    /* width: 450px; */
+    min-height: 150px;
+    background-color: #C4C4C4;    
+}
+
+#relevant-gods {
+    /* width: 450px; */
+    min-height: 150px;
+    background-color: #C4C4C4;  
+}
+
+
+.section-title {
+    width: 100%;
+    background-color: #a1a1a1;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}

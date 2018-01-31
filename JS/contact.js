@@ -1,0 +1,1 @@
+document.getElementsByName('contactThing')[0].placeholder = 'E-Mail \n Phone Number';

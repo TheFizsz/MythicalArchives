@@ -1,0 +1,97 @@
+<html>
+
+<head>
+
+  <title> Contact Us</title>
+  <meta charset="utf-8">
+
+  <!--Edit Navbar-->
+  <link href="././CSS/Nav.css" rel="stylesheet" text="text/css">
+
+  <!--Edit contact page-->
+   <link href="././CSS/contact.css" rel="stylesheet" text="text/css">
+   <script src="././JS/contact.js"></script>
+
+
+  <!--Import modern fonts-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+  <!--Import Jquery API-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+
+  $("#editOrChange").find("button").click(function(){   //If user clicks on edit or change
+      $("#editOrChange").hide();
+      $("form").find("input").css('display','block');
+  });
+
+  });
+
+  </script>
+
+</head>
+
+<body>
+
+
+    <nav class=" grey darken-4" >    <!--Navigation-->
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact </a></li>
+          </ul>
+       </div>
+    </nav>
+
+    <div id="editOrChange">
+
+       <h4>Would you like to make an edit or an addition to the page content?</h4>
+
+       <button><h3>Edit</h3></button>
+       <button><h3>Add</h3></button>
+
+    </div>
+
+  <div id="imageHead"> <h1>Image Goes Here</h1></div>
+
+	<div id="formSect">
+
+	  <div class="container" id="formEdit">
+	    <form action="https://formspree.io/johnnynguyen1717@yahoo.com" method="POST">
+
+	      <b>Full name:</b><br>
+          <input type="text" name="fullname" placeholder="Enter your full name">
+          <br>
+
+			  <b>Contacts:</b>
+              <input name="contactThing" placeholder="E-Mail\Phone Number" id="first_name" type="text" class="validate">
+
+			  <b><font color="white">Message<b>:<br>
+		  <textarea id="textarea1" class="materialize-textarea" placeholder="What edits/additions would you like to request? (Please be specific!)"></textarea>
+
+
+      <input type="submit" placeholder="SEND" class="">
+       <input type="reset" name="reset" placeholder="CLEAR" class="">
+
+
+
+
+	    </form>
+	  </div>
+    </div>
+
+</body>
+
+
+</html>
